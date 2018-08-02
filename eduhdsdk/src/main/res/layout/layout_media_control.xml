@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_audio_control"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/shape_media_play_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_pause_normal" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="-15dp"
+        android:layout_weight="7"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_media_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/color_mp4_file_name"
+                android:textSize="15px" />
+
+            <TextView
+                android:id="@+id/txt_media_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="00:00/00:00"
+                android:textColor="@color/color_mp4_play_time"
+                android:textSize="15px" />
+
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/sek_media"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:maxHeight="5.0dip"
+            android:minHeight="5.0dip"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@drawable/shape_media_player_seekbar_progress_bg" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/img_media_voice"
+                android:layout_width="25px"
+                android:layout_height="25px"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_voice" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center">
+
+            <SeekBar
+                android:id="@+id/sek_media_voice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:maxHeight="5.0dip"
+                android:minHeight="5.0dip"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:thumb="@drawable/shape_media_player_seekbar_progress_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_close_mp3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_close_mp3"
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2px"
+                android:scaleType="fitXY"
+                android:src="@drawable/mp3player_close" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

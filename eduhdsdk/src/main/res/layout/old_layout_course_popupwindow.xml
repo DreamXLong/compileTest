@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="-21px">
+
+        <RadioGroup
+            android:id="@+id/radio_group_popup_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_course_library"
+                android:layout_width="69px"
+                android:layout_height="67px"
+                android:layout_marginBottom="25px"
+                android:background="@drawable/old_selector_library"
+                android:button="@null"
+                android:paddingLeft="16px"
+                android:paddingTop="30px"
+                android:text="@string/doclist"
+                android:textColor="@color/popup_title_color"
+                android:textSize="12px" />
+
+            <RadioButton
+                android:id="@+id/rb_media"
+                android:layout_width="69px"
+                android:layout_height="67px"
+                android:layout_marginTop="25px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/old_selector_media"
+                android:button="@null"
+                android:paddingLeft="16px"
+                android:paddingTop="30px"
+                android:text="@string/medialist"
+                android:textColor="@color/popup_title_color"
+                android:textSize="12px" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/old_popup_title_layout" />
+
+        <include
+            android:id="@+id/ll_course_list"
+            layout="@layout/old_popup_course_list_layout" />
+
+        <include
+            android:id="@+id/ll_media_list"
+            layout="@layout/old_popup_media_list_layout"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

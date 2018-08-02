@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_window_bg_bottom">
+
+    <include
+        android:id="@+id/popup_file_title_layout"
+        layout="@layout/popup_course_media_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/ll_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/popup_take_photo"
+                android:layout_width="140px"
+                android:layout_height="40px"
+                android:background="@drawable/selector_popup_window_choose_photo"
+                android:gravity="center"
+                android:text="@string/uploadphoto"
+                android:textColor="@color/popup_window_choose_photo_color"
+                android:textSize="14px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/popup_choose_photo"
+                android:layout_width="140px"
+                android:layout_height="40px"
+                android:background="@drawable/selector_popup_window_choose_photo"
+                android:gravity="center"
+                android:text="@string/select_picture_from_album"
+                android:textColor="@color/popup_window_choose_photo_color"
+                android:textSize="14px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_course_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_temp"
+        android:layout_below="@id/popup_file_title_layout"
+        android:layout_marginBottom="15px"
+        android:layout_marginLeft="49px"
+        android:layout_marginRight="49px"
+        android:layout_marginTop="15px"
+        android:divider="@color/nothing"
+        android:dividerHeight="10px"
+        android:scrollbars="none" />
+
+</RelativeLayout>

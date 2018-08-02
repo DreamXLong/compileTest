@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40px"
+    android:background="@drawable/popup_window_bg_top">
+
+    <LinearLayout
+        android:id="@+id/ll_title_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_title_chat"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_shutup_default" />
+
+        <TextView
+            android:id="@+id/tv_title_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3px"
+            android:text="@string/popup_title_chat"
+            android:textColor="@color/popup_title_chat"
+            android:textSize="14px" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_popup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/popup_title_color"
+        android:textSize="18px" />
+
+    <ImageView
+        android:id="@+id/iv_popup_close"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18px"
+        android:background="@drawable/close" />
+
+</RelativeLayout>

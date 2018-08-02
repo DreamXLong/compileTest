@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--老版bar界面-->
+    <include
+        android:id="@+id/rel_tool_bar"
+        layout="@layout/old_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rel_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rel_tool_bar"
+        android:layout_toEndOf="@+id/re_laoding"
+        android:background="@color/old_color_white_bg"
+        android:gravity="center_vertical">
+
+        <!--白板-->
+        <RelativeLayout
+            android:id="@+id/rel_wb_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/wb_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:orientation="horizontal">
+
+                <!--mp3播放界面-->
+                <include
+                    android:id="@+id/lin_audio_control"
+                    layout="@layout/old_layout_media_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70px"
+                    android:visibility="gone" />
+
+                <!--MP3图标-->
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/img_disk"
+                    android:layout_width="85px"
+                    android:layout_height="85px"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/play_mp3_gif"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--老师视频区和聊天区-->
+        <LinearLayout
+            android:id="@+id/rel_teacher_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/rel_wb_container"
+            android:background="@color/old_color_chat_list_bg"
+            android:orientation="vertical"
+            android:splitMotionEvents="false">
+
+            <include
+                android:id="@+id/vdi_teacher"
+                layout="@layout/old_video_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tv_room_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/old_shape_room_number_bg"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:textColor="@color/white"
+                android:textSize="16px" />
+
+            <!--消息列表和聊天区-->
+            <include
+                android:id="@+id/rel_chat_part"
+                layout="@layout/layout_old_input_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <!--学生视频区-->
+        <RelativeLayout
+            android:id="@+id/rel_students"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="false"
+            android:gravity="bottom"
+            android:splitMotionEvents="false">
+
+            <View
+                android:id="@+id/v_student"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/old_color_student_bg" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--播放界面-->
+    <FrameLayout
+        android:id="@+id/video_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <!-- laoding界面-->
+    <include
+        android:id="@+id/re_laoding"
+        layout="@layout/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+    <!--回放界面-->
+    <RelativeLayout
+        android:id="@+id/re_play_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/old_rel_back_bar"
+            layout="@layout/old_play_back_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--回放控制界面-->
+        <include
+            android:id="@+id/rel_play_back"
+            layout="@layout/old_layout_playback"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-100px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

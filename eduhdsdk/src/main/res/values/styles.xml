@@ -1,0 +1,82 @@
+<resources>
+
+    //黑屏问题
+
+    <style name="activityVoipVideoTransparentTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@color/window_back_black</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="tv_class_no_checked">
+        <item name="android:textColor">@color/color_file_pressed_background</item>
+    </style>
+
+    <style name="tv_class_checked">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="old_tv_class_no_checked">
+        <item name="android:textColor">@color/old_color_file_pressed_background</item>
+    </style>
+
+    <style name="old_tv_class_checked">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="rb_course_left_checked">
+        <item name="android:textColor">@color/color_course_popup_text_select</item>
+    </style>
+
+    <style name="rb_course_left_no_checked">
+        <item name="android:textColor">@color/color_course_popup_text_default</item>
+    </style>
+
+
+    <style name="old_rb_course_left_checked">
+        <item name="android:textColor">@color/color_course_popup_text_select</item>
+    </style>
+
+    <style name="old_rb_course_left_no_checked">
+        <item name="android:textColor">@color/old_color_course_popup_text_default</item>
+    </style>
+
+
+    <style name="pop_choose_role_no_checked">
+        <item name="android:textColor">@color/color_choose_role_no_checked</item>
+    </style>
+
+    <style name="pop_choose_role_checked">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="time_yel">
+        <item name="android:textColor">@color/time_yel</item>
+    </style>
+
+    <style name="time_red">
+        <item name="android:textColor">@color/time_red</item>
+    </style>
+
+    <style name="color_hands_up">
+        <item name="android:textColor">@color/color_hands_up</item>
+    </style>
+
+    <style name="white">
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

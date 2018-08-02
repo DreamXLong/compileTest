@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/old_color_chat_pop_title"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/txt_close_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/close"
+            android:textColor="@color/old_color_chat_pop_close"
+            android:textSize="16px" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/old_chat"
+            android:textColor="@color/white"
+            android:textSize="18px" />
+
+        <TextView
+            android:id="@+id/txt_send"
+            android:layout_width="80px"
+            android:layout_height="38px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/old_selector_class_begin_bt"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="18px" />
+
+        <ImageView
+            android:id="@+id/iv_broad"
+            android:layout_width="25px"
+            android:layout_height="25px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@id/txt_send"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/keybraod"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_chat"
+            android:layout_width="25px"
+            android:layout_height="25px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@id/txt_send"
+            android:scaleType="fitXY"
+            android:src="@drawable/chat_normal" />
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="80px"
+            android:layout_toLeftOf="@id/txt_send"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/old_icon_pic_chat_pop"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/old_color_chat_pop_edittext"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:enabled="true"
+            android:gravity="top"
+            android:hint="@string/say_something"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="8"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/old_color_chat_input_hint"
+            android:textCursorDrawable="@drawable/shape_personal_info_edittext_cursor_color"
+            android:textSize="18px" />
+
+    </LinearLayout>
+
+</LinearLayout>

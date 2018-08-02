@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:shape="rectangle">
+
+    <solid android:color="@color/old_color_lin_name_student" />
+
+
+
+    <!--  45px  -->
+    <corners
+        android:bottomLeftRadius="0px"
+        android:bottomRightRadius="0px"
+        android:topLeftRadius="0px"
+        android:topRightRadius="0px" />
+
+</shape>
