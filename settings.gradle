@@ -1,1 +1,1 @@
-include ':app', ':eduhdsdk', ':ClassRoomSdk'
+include ':app', ':eduhdsdk', ':ClassRoomSdk', ':testlibrary'

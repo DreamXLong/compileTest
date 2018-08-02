@@ -3,9 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ClassRoomSdk/ClassRoomSdk.iml" filepath="$PROJECT_DIR$/ClassRoomSdk/ClassRoomSdk.iml" />
+      <module fileurl="file://D:\workspace\compileTest\ClassRoomSdk\ClassRoomSdk.iml" filepath="D:\workspace\compileTest\ClassRoomSdk\ClassRoomSdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/compileTest.iml" filepath="$PROJECT_DIR$/compileTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/eduhdsdk/eduhdsdk.iml" filepath="$PROJECT_DIR$/eduhdsdk/eduhdsdk.iml" />
+      <module fileurl="file://D:\workspace\compileTest\eduhdsdk\eduhdsdk.iml" filepath="D:\workspace\compileTest\eduhdsdk\eduhdsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testlibrary/testlibrary.iml" filepath="$PROJECT_DIR$/testlibrary/testlibrary.iml" />
     </modules>
   </component>
 </project>
